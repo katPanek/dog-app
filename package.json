@@ -2,6 +2,7 @@
   "name": "dog-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://katpanek.github.io/dog-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -17,6 +18,8 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "node scripts/test.js",
@@ -44,6 +47,7 @@
   },
   "devDependencies": {
     "eslint": "^8.17.0",
-    "eslint-plugin-react": "^7.30.0"
+    "eslint-plugin-react": "^7.30.0",
+    "gh-pages": "^4.0.0"
   }
 }
