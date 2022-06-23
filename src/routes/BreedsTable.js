@@ -39,7 +39,9 @@ export const BreedsTable = () => {
   if (!breeds.length) {
     return (
       <div className="d-flex w-100 justify-content-center position-absolute top-50">
-        <Spinner animation="border"></Spinner>
+        <Spinner
+          data-testid={'breeds-table-loader'}
+          animation="border"></Spinner>
       </div>
     );
   }
