@@ -7,7 +7,7 @@ export function App() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href={'/breeds-table'}>Dog App</Navbar.Brand>
+          <Navbar.Brand href={'/'}>Dog App</Navbar.Brand>
         </Container>
       </Navbar>
       <Outlet />
