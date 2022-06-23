@@ -58,9 +58,9 @@ export const BreedsTable = () => {
               </tr>
             </thead>
             <tbody>
-              {breeds.map((breed, i) => (
+              {breeds.map((breed) => (
                 <tr key={breed.id}>
-                  <td>{i + 1}</td>
+                  <td>{breed.id}</td>
                   <td>
                     <Link to={'/' + breed.name}>{breed.name}</Link>
                   </td>
